@@ -2,37 +2,32 @@ var quotes = [
   {
     quote: 'All that we are is the result of what we have thought.',
     source: 'Buddha',
-    
-    // no citation, only year
-    year: 1780
+    year: 1780,
+    tags: 'awakening'
   },
   {
     quote: 'I have no special talent. I am only passionately curious.',
     source: 'Albert Einstein',
-    
-    // both citation and year
     citation: 'The Book of Everything',
-    year: 1560
+    year: 1560,
+    tags: 'modest'
   },
   {
     quote: 'If you judge people, you have no time to love them.',
-    source: 'Mother Teresa'
-    
-    // no citation or year
+    source: 'Mother Teresa',
+    tags: 'love'
   },
   {
     quote: 'A great man is always willing to be little.',
     source: 'Ralph Waldo Emerson',
-    
-    // no citation, only year
-    year: 1989
+    year: 1989,
+    tags: 'modest'
   }, 
   {
     quote: 'The successful warrior is the average man, with laser-like focus.',
     source: 'Bruce Lee',
-    
-    // no year, only citation
-    citation: 'A Test in Time'
+    citation: 'A Test in Time',
+    tags: 'focus'
   }
 ];
 

@@ -22,8 +22,11 @@ function printQuote() {
   }
   if (randomQuote['year'] !== undefined) {
     htmlString += '<p class="year">' + randomQuote['year'];
-    
   } 
+  // Optional 'tags' concatenation
+  if (randomQuote['tags'] !== undefined) {
+    htmlString += '<p class="tags">' + 'category: ' + randomQuote['tags'];
+  }
   
   // Place htmlString variable in index.html using .innerHTML
   document.getElementById('quote-box').innerHTML = htmlString;
@@ -42,10 +45,8 @@ function randomColors() {
 
 // Change quote via 'Show another quote' button
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
-//Tried changing color via button but Couldn't figure it out 
-document.getElementById('loadQuote').addEventListener("click", randomColors, false);
 
-// Automatically click 'Show another quote' buttom every 3 seconds
+// Automatically click 'Show another quote' button every 3 seconds
 setInterval(function() {
 document.getElementById('loadQuote').click(printQuote());}, 3000);
 
